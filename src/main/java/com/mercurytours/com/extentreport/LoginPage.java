@@ -28,7 +28,7 @@ public class LoginPage extends ForExtentReport {
 		}
    public void verifyLogin(){
 	   CommonUtils co=new CommonUtils(driver);
-	   co.setEditField(username,"lkjlk");
+	   co.setEditField(username," ");
 	   co.setEditField(password,"123");
 	   co.click(signinbutton);
    }
