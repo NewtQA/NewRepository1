@@ -20,7 +20,7 @@ public class LoginPage extends ForExtentReport {
 	public  WebDriver driver;
        
        By username=By.xpath("//input[@name='userName']");
-       By password=By.xpath("//input[@name='password']");
+       By password=By.xpath("//input[@name='passwo']");
        By signinbutton=By.xpath("//input[@name='login']");
         
    public LoginPage(WebDriver driver){
@@ -28,7 +28,7 @@ public class LoginPage extends ForExtentReport {
 		}
    public void verifyLogin(){
 	   CommonUtils co=new CommonUtils(driver);
-	   co.setEditField(username," ");
+	   co.setEditField(username,"123");
 	   co.setEditField(password,"123");
 	   co.click(signinbutton);
    }
